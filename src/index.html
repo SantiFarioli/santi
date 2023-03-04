@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>Mi primera web</title>  <!-- Define el titulo de la pestaña de una pagina-->
+    
+        <!-- ESTILO DE TABLA-->
+
+    <style>             
+        table, th, td {
+            border: 2px solid black;  
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Mi primer codigo</h1>
+    <h2> Mi segundo codigo</h2>   
+    <h3> Mi tercero codigo</h3>    <!--H1 al H6 Son elementos de encabezado-->
+    <h4> Mi cuarto codigo</h4>
+    <h5> Mi quinto codigo</h5>
+    <h6> Mi sexto codigo</h6>
+
+    <hr> <!-- separa por una linea-->
+
+    <h2> Parrafos de texto</h2>
+    <p> Había una vez</p>
+    <p> Un chanchito feliz</p> 
+    <p> Escribiendo un texto mas largo <br> <!-- Salto de linea-->
+        para darle <span style="color:red"> utilidad </span>a la etiqueta span</p>
+    <hr>              
+    <a target="_blank" href="http://www.google.com">Ir a google</a>   <!-- Hipervinculo-->
+     <br>   
+    <img src="img/patagonia.jpg" width="400"/>
+    <hr>
+            <!--FORMULARIO-->
+
+        <!--El Form (formulario) es para interactuar con el usuario y poder recopilar su informacion -->
+    <form >     <!--Dentro de la etiqueta form, action="/formulario" method="POST" O "GET"-->
+        <label for="nombre">Nombre</label>             
+        <input value="Santiago" type="text" id="nombre" name="nombre" placeholder="Nombre"/>  
+        <br>
+        <label for="apellido">Apellido</label>             
+        <input value="Farioli" type="text" id="apellido" name="apellido" placeholder="Apellido"/>    
+        <br>
+        <label for="comentario">Comentario</label> <br>
+        <textarea name="comentario" placeholder="Ingrese comentario" id="comentario" cols="50" rows="10"> Ingrese un comentario aqui</textarea>
+        <!-- <input type="submit"> -->  
+        <br> 
+             
+            <!-- BOTONES --> 
+            
+        <button type="button"> Tipo Boton </button>
+        <button type="reset"> Tipo Reset </button>
+        <button type="submit"> Tipo Submit </button>
+    </form>
+    <hr>
+           <!--LISTAS-->
+
+           <!--ul -- Lista no Ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+           <!--ol -- Lista Ordenada-->
+    <ol>
+        <li value="14">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Sub elemento 1</li>    <!-- cambio de estilo de la lista -->
+                <li style="list-style-type: lower-alpha;">Sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 3</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+    <hr>
+           <!--TABLAS-->
+
+    <table style="width: 400px;">                          <!--style="border: 2px solid black;"-->
+         <thead>     <!--THEAD AGRUPA ELEMNTOS DE LA CABECERA-->
+            <tr>     <!--TR -- fila de la tabla-->
+                <th>Producto</th>
+                <th>Precio</th>               <!--th-- CABECERA-->
+            </tr>
+         </thead>
+         <tbody>   <!-- TBODY SIRVE PARA AGRUPA TODAS LAS FILAS QUE PERTENECEN AL CUERPO DE NUESTRA TABLA-->
+            <tr>
+                <td> Asado </td>
+                <td> Gratis </td>                  <!-- td-- se utiliza para poder definir elelemntos estandares dentro de las celdas de nuestra tabla-->
+            </tr>
+            <tr>
+                <td> Ensalada </td>
+                <td> $200 </td>
+            </tr>
+            <tr>
+                <td> Pan </td>
+                <td> $100 </td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <td> <b>TOTAL</b> </td>    <!-- <B> NEGRITA-->
+            <td>$300</td>
+         </tfoot>
+    </table>
+</body>
+</html>
